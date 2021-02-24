@@ -1,0 +1,17 @@
+// %btn {
+// 	box-shadow: 0 10px 25px rgba(254, 62, 87, 0.3);
+// 	background-color: $accent;
+// 	color: #fff;
+// 	text-transform: uppercase;
+// 	@extend %roboto-400;
+// 					cursor: pointer;
+// }
+
+
+:root {
+  --accent-color: #000;
+  --btn-color: yellow;
+  --default-color: #fff;
+  --text-color: #888;
+  --title-color: #555;
+}
