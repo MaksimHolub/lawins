@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Gilroy", sans-serif;
+  color: var(--text-color);
+
+  background-color: var(--default-color);
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  background-color: var(--btn-color);
+  border: none;
+  cursor: pointer;
+}

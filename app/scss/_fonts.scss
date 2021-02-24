@@ -1,0 +1,87 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+  url("../fonts/Gilroy-Light.woff2") format("woff2"),
+  url("../fonts/Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"),
+  url("../fonts/Gilroy-LightItalic.woff2") format("woff2"),
+  url("../fonts/Gilroy-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+  url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+  url("../fonts/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+  url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+  url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+  url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+  url("../fonts/Gilroy-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+  url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+  url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"),
+  url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"),
+  url("../fonts/Gilroy-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "TrajanPro3";
+
+  font-display: swap;
+  src: local("Trajan Pro 3 SemiBold"), local("Trajan Pro 3-SemiBold"), local("TrajanPro3-SemiBold"),
+  url("../fonts/TrajanPro3SemiBold.woff2") format("woff2"),
+  url("../fonts/TrajanPro3SemiBold.woff") format("woff");
+}
