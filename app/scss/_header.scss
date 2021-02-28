@@ -1,61 +1,249 @@
 .header {
+  min-height: 948px;
+
+  background-image: url("../img/header-bg.png");
+  background-position: center center;
+  background-size: cover;
+
   &__top {
-  }
-
-  &__logo-link {
-  }
-
-  &__logo-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 40px 0;
   }
 
   &__descr {
-  }
+    color: rgba(115, 115, 115, .8);
 
-  &__menu {
-  }
+    &::before {
+      content: "";
 
-  &__menu-list {
+      background-color: #c4c4c4;
+    }
   }
 
   &__menu-item {
+    margin-right: 71px;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
   }
 
   &__menu-link {
+    color: #363636;
   }
 
   &__contact {
+    margin-right: 40px;
+
+    text-align: right;
+  }
+
+  &__contact-phone {
+    position: relative;
+
+    padding-left: 37px;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Trajan Pro 3";
+    color: var(--text-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 23px;
+      height: 23px;
+
+      background-image: url("../img/svg/phone.svg");
+      transform: translateY(-50%);
+      filter: drop-shadow(1px 6px 21px rgba(255, 212, 8, .7));
+    }
   }
 
   &__contact-info {
+    display: block;
+
+    font-size: 12px;
+    line-height: 30px;
+    color: rgba(115, 115, 115, .5);
   }
 
   &__menu-btn {
-  }
+    min-width: 190px;
+    padding: 19px 13px 17px 13px;
 
-  &__content {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--text-color);
+
+    background-color: transparent;
+    border: 2px solid var(--btn-color);
+    border-radius: 6px;
+    cursor: pointer;
   }
 
   &__conditions-box {
+    margin-bottom: 15px;
   }
 
   &__conditions-item {
+    position: relative;
+
+    padding-left: 21px;
+
+    line-height: 21px;
+    color: rgba(0, 0, 0, .8);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 13px;
+      height: 13px;
+
+      background-image: url("../img/yellow-point.png");
+      transform: translateY(-50%);
+    }
+
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
   }
 
   &__title {
+    max-width: 620px;
+    margin-bottom: 15px;
+
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 55px;
+    font-family: "Trajan Pro 3";
+    color: var(--text-color);
   }
 
   &__subtitle {
+    margin-bottom: 40px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Trajan Pro 3";
+    color: rgba(var(--text-color), .6);
   }
 
   &__advantages-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 610px;
+    margin-bottom: 40px;
   }
 
   &__advantages-item {
+    position: relative;
+
+    padding-top: 50px;
+
+    line-height: 21px;
+    color: var(--text-color);
+
+    &:not(:last-child) {
+      margin-right: 43px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
-  &__clause {
+  &__advantages-item--man {
+    &::before {
+      width: 39px;
+      height: 39px;
+
+      background-image: url("../img/svg/law-man.svg");
+    }
   }
 
-  &__content-btn {
+  &__advantages-item--num {
+    &::before {
+      width: 50px;
+      height: 34px;
+
+      background-image: url("../img/svg/twenty.svg");
+    }
+  }
+
+  &__advantages-item--hummer {
+    &::before {
+      width: 39px;
+      height: 39px;
+
+      background-image: url("../img/svg/hummer.svg");
+    }
+  }
+}
+
+.header-content {
+  &__wrapper {
+    max-width: 590px;
+    padding: 12px;
+
+    background-color: var(--default-color);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .04);
+  }
+}
+
+.header-form {
+  padding: 25px;
+
+  letter-spacing: normal;
+
+  background-color: var(--default-color);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, .04);
+
+  &__title {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-color);
+  }
+
+  &__input-name {
+    color: rgba(48, 48, 48, .6);
+  }
+
+  &__input {
+    margin-right: 24px;
+
+    color: rgba(51, 51, 51, .8);
+
+    border: 2px solid rgba(#ffd408, .6);
+    border-radius: 6px;
+    outline: rgba(#ffd408, .6);
+  }
+
+  &__btn {
+    padding: 23px 31px;
+  }
+
+  &__accept-text,
+  .social__politics {
+    color: rgba(48, 48, 48, .4);
   }
 }

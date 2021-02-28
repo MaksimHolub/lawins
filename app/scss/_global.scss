@@ -11,7 +11,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   font-family: "Gilroy", sans-serif;
-  color: var(--text-color);
+  color: #fff;
 
   background-color: var(--default-color);
 }
@@ -26,8 +26,120 @@ body {
   padding: 0 15px;
 }
 
-.btn {
-  background-color: var(--btn-color);
-  border: none;
-  cursor: pointer;
+.logo-link {
+  margin-right: 13px;
+}
+
+.descr {
+  position: relative;
+
+  max-width: 155px;
+  margin-right: 65px;
+  padding-left: 15px;
+
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 3px;
+    transform: translateY(-50%);
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-link {
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.section-top {
+  &__title {
+    position: relative;
+
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 56px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+    color: var(--default-color);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 45px;
+      height: 3px;
+
+      background-image: url("../img/svg/line.svg");
+      transform: translateX(-50%);
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+  }
+}
+
+.social {
+  &__links {
+    display: flex;
+  }
+
+  &__links-text {
+    margin-right: 19px;
+
+    font-size: 12px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  &__links-item {
+    &:hover {
+      filter: drop-shadow(0 5px 21px rgba(255, 212, 8, .4)) ;
+    }
+
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+
+  &__politics-link {
+    display: block;
+    padding-top: 9px;
+  }
+
+  &__politics {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, .4);
+    text-decoration: underline;
+  }
 }

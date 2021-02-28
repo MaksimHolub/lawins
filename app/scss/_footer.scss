@@ -1,70 +1,56 @@
 .footer {
+  // FIXME Расстояние между элементами!
+  background-color: #242734;
+
   &__content {
-  }
-
-  &__logo-link {
-  }
-
-  &__logo-img {
+    display: flex;
+    align-items: center;
+    padding: 42px 0 49px;
   }
 
   &__descr {
+    margin-right: 27px;
+
+    color: rgba(145, 145, 145, .8);
+
+    &::before {
+      content: "";
+
+      background-color: rgba(156, 156, 156, .5);
+    }
   }
 
   &__menu {
-  }
-
-  &__menu-list {
+    margin-right: 50px;
   }
 
   &__menu-item {
+    &:not(:last-child) {
+      margin-right: 39px;
+    }
   }
 
   &__menu-link {
+    color: #fff8f8;
   }
 }
 
-.logo-link {
-}
+.developer {
+  display: flex;
+  align-items: center;
+  margin-right: 45px;
 
-.logo-img {
-}
+  &__text {
+    display: inline-block;
+    margin-right: 10px;
 
-.descr {
-}
-
-.menu {
-}
-
-.menu-list {
-}
-
-.menu-item {
-}
-
-.menu-link {
-}
-
-.dev-info {
-  &__descr {
-  }
-}
-
-.dev {
-  &__info-link {
+    font-size: 12px;
+    line-height: 15px;
+    color: #828286;
   }
 
-  &__info-logo {
+  &__logo {
+    display: inline-block;
+    width: 100px;
   }
-}
-
-.social {
-  &__links {
-  }
-}
-
-.social-descr {
-}
-
-.social-link {
 }

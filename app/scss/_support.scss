@@ -1,0 +1,148 @@
+.support {
+  position: relative;
+
+  padding: 70px 0 620px 0;
+
+  background-image: url("../img/support-bg.jpg");
+  background-position: bottom center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+
+    width: 427px;
+    height: 416px;
+
+    background-image: url("../img/svg/dots.svg");
+  }
+}
+
+.support-top {
+  margin-bottom: 65px;
+
+  &__title {
+    padding-right: 225px;
+    padding-left: 225px;
+  }
+}
+
+.support-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
+
+  &__item-wrapper {
+    width: 170px;
+    height: 183px;
+    padding: 40px 0;
+
+    background: rgba(73, 77, 95, .1);
+    border-radius: 6px;
+  }
+
+  &__item {
+    display: block;
+    align-self: flex-start;
+    padding-top: 75px;
+
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.support-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  max-width: 100%;
+  height: 660px;
+  margin-bottom: 30px;
+
+  column-gap: 50px;
+
+  row-gap: 30px;
+
+  &__details {
+    position: relative;
+
+    align-self: start;
+    width: 310px;
+
+    cursor: pointer;
+  }
+
+  &__details-title {
+    padding: 17px 15px 17px 55px;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    border: 1px solid #434343;
+    border-radius: 6px;
+  }
+
+  &__details--open {
+    .support-content__details-title {
+      position: relative;
+
+      padding-bottom: 25px;
+
+      background: #3a3e4f;
+      border-bottom: none;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+
+        width: 275px;
+        height: 1px;
+
+        background-color: rgba(255, 255, 255, .1);
+        transform: translateX(-50%);
+      }
+    }
+
+    .support-content__details-text {
+      display: block;
+    }
+  }
+
+  &__details-text {
+    position: absolute;
+    z-index: 10;
+
+    display: none;
+    padding: 0 18px 18px 18px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, .8);
+
+    background: #3a3e4f;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+}
+
+.support-bottom {
+  &__text {
+    display: flex;
+    justify-content: center;
+
+    font-weight: 400;
+    line-height: 27px;
+
+    opacity: .6;
+  }
+}
