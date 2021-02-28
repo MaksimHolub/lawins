@@ -1,7 +1,7 @@
 .header {
   min-height: 948px;
 
-  background-image: url("../img/bg.png");
+  background-image: url("../img/header-bg.png");
   background-position: center center;
   background-size: cover;
 
@@ -13,48 +13,14 @@
     padding: 40px 0;
   }
 
-  &__logo-link {
-    margin-right: 13px;
-  }
-
-  &__logo-img {
-  }
-
   &__descr {
-    position: relative;
-
-    max-width: 155px;
-    margin-right: 65px;
-    padding-left: 15px;
-
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 15px;
     color: rgba(115, 115, 115, .8);
 
     &::before {
       content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-
-      width: 5px;
-      height: 5px;
 
       background-color: #c4c4c4;
-      border-radius: 3px;
-      transform: translateY(-50%);
     }
-  }
-
-  &__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__menu-list {
-    display: flex;
   }
 
   &__menu-item {
@@ -66,8 +32,6 @@
   }
 
   &__menu-link {
-    font-weight: 600;
-    line-height: 30px;
     color: #363636;
   }
 
@@ -125,9 +89,6 @@
     border: 2px solid var(--btn-color);
     border-radius: 6px;
     cursor: pointer;
-  }
-
-  &__content {
   }
 
   &__conditions-box {
@@ -235,8 +196,10 @@
       background-image: url("../img/svg/hummer.svg");
     }
   }
+}
 
-  &__content-wrapper {
+.header-content {
+  &__wrapper {
     max-width: 590px;
     padding: 12px;
 
@@ -244,137 +207,43 @@
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, .04);
   }
+}
 
-  &__form {
-    padding: 25px;
+.header-form {
+  padding: 25px;
 
-    background-color: var(--default-color);
-    border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, .04);
-  }
+  letter-spacing: normal;
 
-  &__form-title {
-    margin-bottom: 30px;
+  background-color: var(--default-color);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, .04);
 
-    font-weight: 700;
+  &__title {
     font-size: 20px;
     line-height: 30px;
     color: var(--text-color);
-
-    span {
-      font-weight: 400;
-    }
   }
 
-  &__form-input-name {
-    display: block;
-    margin-bottom: 8px;
-
-    font-size: 12px;
-    line-height: 19px;
-    text-align: left;
-    color: rgba(var(--text-color), .6);
+  &__input-name {
+    color: rgba(48, 48, 48, .6);
   }
 
-  &__form-input {
-    max-width: 238px;
+  &__input {
     margin-right: 24px;
-    padding: 20px 30px 20px 45px;
 
-    font-size: 16px;
-    line-height: 26px;
-    text-align: right;
     color: rgba(51, 51, 51, .8);
 
     border: 2px solid rgba(#ffd408, .6);
     border-radius: 6px;
     outline: rgba(#ffd408, .6);
-
-    &::placeholder {
-      // margin-left: -10px;
-      background-image: url("../img/svg/phone-small.svg");
-      background-repeat: no-repeat;
-    }
   }
 
-  &__form-btn {
-    position: relative;
-
-    padding: 20px 38px;
-
-    font-weight: 700;
-    line-height: 25px;
-    text-align: center;
-    color: var(--text-color);
-
-    background: linear-gradient(356.02deg, #ffd408 3.36%, #ffdf46 96.87%);
-    border-radius: 6px;
-    box-shadow: inset 0 0 6px 1px #ffed00;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 3px;
-      left: 0;
-      z-index: -10;
-
-      width: 100%;
-      height: 100%;
-
-      background: #efcb1f;
-      border-radius: 6px;
-      box-shadow: 0 16px 68px 2px rgba(255, 212, 8, .25);
-    }
+  &__btn {
+    padding: 23px 31px;
   }
 
-  &__form-accept {
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 21px;
-    color: rgba(#313131, .4);
-  }
-
-  &__form-checkbox {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-
-    clip: rect(0 0 0 0);
-  }
-
-  &__form-checkbox-style {
-    position: relative;
-
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-
-    border: 1px solid rgba(#ffd408, .6);
-    border-radius: 2px;
-  }
-
-  &__form-checkbox:checked + .header__form-checkbox-style::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 1px;
-
-    width: 10px;
-    height: 10px;
-
-    background-image: url("../img/svg/check.svg");
-    background-repeat: no-repeat;
-    transform: translateY(-50%);
-  }
-
-  &__form-accept-link {
-    color: rgba(#313131, .4);
-    text-decoration: underline;
+  &__accept-text,
+  .social__politics {
+    color: rgba(48, 48, 48, .4);
   }
 }

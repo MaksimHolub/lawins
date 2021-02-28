@@ -1,0 +1,140 @@
+.finance {
+  padding-top: 80px;
+
+  background-image: url("../img/finance-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  &__blockquote {
+    max-width: 665px;
+    padding: 12px;
+
+    background: #fff;
+    border-radius: 6px;
+
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+
+    &--wrapper {
+      margin-bottom: 100px;
+
+      filter: drop-shadow(0 4px 47px rgba(222, 222, 222, 1));
+    }
+  }
+
+  &__blockquote-content {
+    position: relative;
+
+    max-width: 655px;
+    padding: 40px 50px 40px 105px;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: #313131;
+
+    background: #fff;
+    border: 1px dashed rgba(0, 0, 0, .03);
+    border-radius: 6px;
+
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 47px;
+      left: 30px;
+
+      width: 46px;
+      height: 44px;
+
+      background-image: url("../img/svg/blockquote.svg");
+    }
+
+    &--wrapper {
+      filter: drop-shadow(0 4px 47px rgba(222, 222, 222, 1));
+    }
+  }
+}
+
+ul.finance-content__list {
+  padding-left: 60px;
+}
+
+.finance-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__hero {
+    position: relative;
+
+    margin-right: 60px;
+  }
+
+  &__hero-img {
+    max-width: none;
+    margin-left: -185px;
+  }
+
+  &__hero-label {
+    &--wrapper-outter {
+      bottom: 75px;
+      left: 0;
+    }
+  }
+
+  &__list {
+    counter-reset: list;
+  }
+
+  &__list-item {
+    position: relative;
+
+    margin-bottom: 45px;
+    padding-left: 105px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #313131;
+
+    &::before {
+      content: counter(list);
+      position: absolute;
+      top: 50%;
+      left: 28px;
+      z-index: 2;
+
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 52px;
+      font-family: "Trajan Pro 3";
+      color: #ffd408;
+
+      transform: translateY(-50%);
+
+      counter-increment: list;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+
+      width: 74px;
+      height: 74px;
+
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+    padding-top: 30px;
+  }
+}

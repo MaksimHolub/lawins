@@ -1,0 +1,232 @@
+.about {
+  padding-top: 100px;
+
+  background-image: url("../img/about-bg.png");
+  background-position: center center;
+  background-size: cover;
+
+  &__title {
+    margin-bottom: 80px;
+
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 61px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+    color: #313131;
+  }
+
+  &__blockquote--wrapper {
+    filter: drop-shadow(0 4px 47px rgba(222, 222, 222, .6));
+  }
+
+  &__blockquote {
+    max-width: 680px;
+    margin: -40px auto 0;
+    padding: 12px;
+
+    background: #fff;
+    border-radius: 6px;
+
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  }
+
+  &__blockquote-content--wrapper {
+    filter: drop-shadow(0 4px 47px rgba(222, 222, 222, .6));
+  }
+
+  &__blockquote-content {
+    position: relative;
+
+    max-width: 655px;
+    padding: 40px 50px 40px 105px;
+
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #313131;
+
+    background: #fff;
+    border: 1px dashed rgba(0, 0, 0, .03);
+    border-radius: 6px;
+
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+
+    span {
+      font-weight: 300;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 47px;
+      left: 30px;
+
+      width: 46px;
+      height: 44px;
+
+      background-image: url("../img/svg/blockquote.svg");
+    }
+  }
+}
+
+.about-cards {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+
+  &__item {
+    width: 270px;
+    height: 288px;
+    padding: 50px 23px 40px 23px;
+
+    background: rgba(224, 224, 224, .1);
+    border-radius: 6px;
+  }
+
+  &__item-text {
+    position: relative;
+
+    padding-top: 100px;
+
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(49, 49, 49, .8);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &--wreath::before {
+      width: 78px;
+      height: 69px;
+
+      background-image: url("../img/svg/wreath-icon.svg");
+    }
+
+    &--twenty::before {
+      width: 82px;
+      height: 55px;
+
+      background-image: url("../img/svg/twenty-icon-big.svg");
+    }
+
+    &--mortarboard::before {
+      width: 87px;
+      height: 56px;
+
+      background-image: url("../img/svg/mortarboard-icon.svg");
+    }
+
+    &--tag::before {
+      width: 58px;
+      height: 58px;
+
+      background-image: url("../img/svg/tag-icon.svg");
+    }
+  }
+
+  &__item-info {
+    display: none;
+  }
+
+  &__item-text--tag::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../img/svg/info-icon.svg");
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__hero {
+    position: relative;
+  }
+
+  &__hero-img {
+    max-width: none;
+    margin-left: -190px;
+  }
+
+  &__hero-label--wrapper-outter {
+    bottom: 165px;
+    left: -50px;
+  }
+
+  &__media {
+    padding-top: 20px;
+  }
+
+  &__media-box {
+    display: flex;
+    align-items: center;
+    width: 735px;
+    height: 500px;
+
+    background-repeat: no-repeat;
+    border: 12px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .06);
+
+    object-fit: cover;
+  }
+
+  &__play {
+    position: relative;
+
+    display: block;
+    width: 252px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 20px 50px 20px 107px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    color: #000;
+
+    background: #ffd925;
+    border-radius: 100px;
+
+    &:hover {
+      box-shadow: 0 16px 68px 2px rgba(255, 212, 8, .54), inset 0 0 6px 1px #ffed00;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+
+      background: #ffe256;
+      background-image: url("../img/svg/play-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 100px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.other {
+  position: relative;
+
+  padding-top: 80px;
+  padding-bottom: 85px;
+
+  background: #1c1f2c;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 427px;
+    height: 416px;
+
+    background-image: url("../img/svg/dots.svg");
+    transform: scale(1, -1);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 427px;
+    height: 416px;
+
+    background-image: url("../img/svg/dots.svg");
+    transform: scale(-1, 1);
+  }
+}
+
+.other-top {
+  margin-bottom: 70px;
+
+  &__subtitle {
+    padding: 0 210px;
+  }
+}
+
+.other-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    width: 370px;
+    height: 352px;
+  }
+
+  &__item-img {
+    border-radius: 10px;
+
+    object-fit: cover;
+  }
+
+  &__item-box {
+    margin-top: -10px;
+    padding: 30px 100px 30px 30px;
+
+    background: rgba(196, 196, 196, .1);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 39px;
+    font-family: "Trajan Pro 3";
+  }
+
+  &__item-link {
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(255, 255, 255, .6);
+    text-decoration: underline;
+  }
+}

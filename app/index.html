@@ -1,105 +1,841 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Lawins legal</title>
-		<link href="css/style.min.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header class="header">
-			<div class="container">
-				<div class="header__top">
-					<a class="header__logo-link logo-link" href="#">
-						<img
-							class="header__logo-img logo-img"
-							src="img/svg/logo.svg"
-							alt="Логотип компании"
-						/>
-					</a>
-					<span class="header__descr descr">
-						Юридическое обслуживание бизнеса по всей России
-					</span>
-					<nav class="header__menu menu">
-						<ul class="header__menu-list menu-list">
-							<li class="header__menu-item menu-item">
-								<a class="header__menu-link menu-link" href="#"
-									>Направления работы</a
-								>
-							</li>
-							<li class="header__menu-item menu-item">
-								<a class="header__menu-link menu-link" href="#">Расчет цены</a>
-							</li>
-							<li class="header__menu-item menu-item">
-								<a class="header__menu-link menu-link" href="#">FAQ</a>
-							</li>
-						</ul>
-						<div class="header__contact">
-							<a class="header__contact-phone" href="tel:+88006009161"
-								>8 800 600 91 61</a
-							>
-							<span class="header__contact-info"
-								>Работаем Пн-Пт: 10:00-18:00
-							</span>
-						</div>
-						<button class="header__menu-btn">Получить консультацию</button>
-					</nav>
-				</div>
-				<div class="header__content">
-					<div class="header__conditions-box">
-						<span class="header__conditions-item">Ежемесячно</span>
-						<span class="header__conditions-item">По мере необходимости</span>
-					</div>
-					<h2 class="header__title">
-						Юридическое обслуживание компаний в Москве
-					</h2>
-					<p class="header__subtitle">И удаленно по всей России</p>
-					<ul class="header__advantages-box">
-						<li class="header__advantages-item header__advantages-item--man">
-							Усилим или заменим штатного юриста
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lawins legal</title>
+	<link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<a class="header__logo-link logo-link" href="#">
+					<img class="header__logo-img logo-img" src="img/svg/logo.svg" alt="Логотип компании">
+				</a>
+				<span class="header__descr descr">
+					Юридическое обслуживание бизнеса по всей России
+				</span>
+				<nav class="header__menu menu">
+					<ul class="header__menu-list menu-list">
+						<li class="header__menu-item menu-item">
+							<a class="header__menu-link menu-link" href="#">Направления работы</a>
 						</li>
-						<li class="header__advantages-item header__advantages-item--num">
-							Лет успешной практики во всех наших делах
+						<li class="header__menu-item menu-item">
+							<a class="header__menu-link menu-link" href="#">Расчет цены</a>
 						</li>
-						<li class="header__advantages-item header__advantages-item--hummer">
-							Минимум 2 юриста работают над вашей задачей
+						<li class="header__menu-item menu-item">
+							<a class="header__menu-link menu-link" href="#">FAQ</a>
 						</li>
 					</ul>
-
-					<div class="header__content-wrapper">
-						<form class="header__form" action="#">
-							<p class="header__form-title">
-								Получите бесплатную развернутую консультацию юриста
-								<span>по вашему вопросу в течение 15 минут</span>
-							</p>
-							<span class="header__form-input-name">Ваш номер</span>
-							<input
-								class="header__form-input"
-								placeholder="+7 (___) ___-__-__"
-							/>
-							<button class="header__form-btn btn">
+				</nav>
+				<div class="header__contact">
+					<a class="header__contact-phone" href="tel:+88006009161">8 800 600 91 61</a>
+					<span class="header__contact-info">Работаем Пн-Пт: 10:00-18:00
+					</span>
+				</div>
+				<button class="header__menu-btn">Получить консультацию</button>
+			</div>
+			<div class="header__content">
+				<div class="header__conditions-box">
+					<span class="header__conditions-item">Ежемесячно</span>
+					<span class="header__conditions-item">По мере необходимости</span>
+				</div>
+				<h2 class="header__title">
+					Юридическое обслуживание компаний в Москве
+				</h2>
+				<p class="header__subtitle">И удаленно по всей России</p>
+				<ul class="header__advantages-box">
+					<li class="header__advantages-item header__advantages-item--man">
+						Усилим или заменим штатного юриста
+					</li>
+					<li class="header__advantages-item header__advantages-item--num">
+						Лет успешной практики во всех наших делах
+					</li>
+					<li class="header__advantages-item header__advantages-item--hummer">
+						Минимум 2 юриста работают над вашей задачей
+					</li>
+				</ul>
+				<div class="header-content__wrapper">
+					<form class="header-form" action="#">
+						<p class="header-form__title form__title">
+							Получите бесплатную развернутую консультацию юриста
+							<span>по вашему вопросу в течение 15 минут</span>
+						</p>
+						<span class="header-form__input-name form__input-name">Ваш номер</span>
+						<div class="header-form__input-box form__input-box">
+							<input class="header-form__input form__input" placeholder="+7 (___) ___-__-__">
+							<button class="header-form__btn btn">
 								Получить консультацию
 							</button>
-							<label class="header__form-accept">
-								<input
-									class="header__form-checkbox"
-									type="checkbox"
-									name="accept"
-									checked
-								/>
-								<span class="header__form-checkbox-style"></span>
-								<span class="header__form-accept-text"
-									>Соглашаюсь с
-									<a class="header__form-accept-link" href="#"
-										>Политикой конфиденциальности сайта</a>
-									</span>
-							</label>
-						</form>
+						</div>
+						<label class="header-form__accept form__accept">
+							<input class="header-form__checkbox form__checkbox" name="accept" type="checkbox" checked>
+							<span class="header-form__checkbox-style form__checkbox-style"></span>
+							<span class="header-form__accept-text form__accept-text">Соглашаюсь с
+								<a class="header-form__accept-link social__politics" href="#">Политикой конфиденциальности сайта</a>
+							</span>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="consequences">
+			<div class="container">
+				<div class="consequences__content">
+					<blockquote class="consequences__blockquote">
+						“...У вас скорее всего уже есть знакомый юрист или сотрудник в
+						штате
+						<span>но его компетенций недостаточно, чтобы обеспечить полную
+							юридическую поддержку Вашего бизнеса</span>
+					</blockquote>
+					<div class="consequences__results-wrapper">
+						<div class="consequences__results">
+							<h5 class="consequences__results-title">Как следствие:</h5>
+							<div class="consequences__results-box">
+								<div class="consequences__results-item consequences__results-item--fail1">
+									Сорванные сделки
+								</div>
+								<div class="consequences__results-item consequences__results-item--fail2">
+									Просроченные оплаты
+								</div>
+								<div class="consequences__results-item consequences__results-item--fail3">
+									Суды с контрагентами
+								</div>
+								<div class="consequences__results-item consequences__results-item--fail4">
+									Ошибки в договорах
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="consequences__lawyer">
+						<div class="consequences__lawyer-item">
+							Ольга Рычагова
+							<span>Управляющий партнер</span>
+						</div>
+						<img class="consequences__lawyer-signature" src="img/signature.png" alt="Подпись управляющего партнера">
+						<div class="consequences__lawyer-experience">
+							<span class="consequences__lawyer-experience-num">20+</span>лет
+							в сфере<br><span class="consequences__lawyer-experience-text">юридической помощи бизнесу</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</header>
+		</section>
+		<section class="specialist">
+			<div class="container">
+				<div class="specialist-top section-top">
+					<h3 class="specialist-top__title section-top__title">
+						Над вашей задачей всегда будут <br>
+						работать минимум 2 юриста
+					</h3>
+					<p class="specialist-top__subtitle section-top__subtitle">
+						чтобы изучить её с разных сторон <br>
+						и найти единственное верное решение
+					</p>
+				</div>
+				<div class="specialist-avatars">
+					<div class="specialist-avatars__top">
+						<a class="specialist-avatars__top-item specialist-avatars__top-item--active" href="#tab-1">
+							<div class="specialist-avatars__wrapper">
+								<img class="specialist-avatars__img" src="img/avatar-1.png" alt="Фотография специалиста">
+							</div>
+							<p class="specialist-avatars__name">Елена Яргина</p>
+						</a>
+						<a class="specialist-avatars__top-item" href="#tab-2">
+							<div class="specialist-avatars__wrapper">
+								<img class="specialist-avatars__img" src="img/avatar-2.png" alt="Фотография специалиста">
+							</div>
+							<p class="specialist-avatars__name">Ольга Рычагова</p>
+						</a>
+						<a class="specialist-avatars__top-item" href="#tab-3">
+							<div class="specialist-avatars__wrapper">
+								<img class="specialist-avatars__img" src="img/avatar-3.png" alt="Фотография специалиста">
+							</div>
+							<p class="specialist-avatars__name">Юлия Касаткина</p>
+						</a>
+						<a class="specialist-avatars__top-item" href="#tab-4">
+							<div class="specialist-avatars__wrapper">
+								<img class="specialist-avatars__img" src="img/avatar-4.png" alt="Фотография специалиста">
+							</div>
+							<p class="specialist-avatars__name">Анна Покровская</p>
+						</a>
+					</div>
+				</div>
+				<div class="specialist-avatars__content">
+					<div class="specialist-avatars__content-item specialist-avatars__content-item--active" id="tab-1">
+						<div class="content-item__wrapper">
+							<img class="specialist-avatars__content-img" src="img/main-avatar-1.png" alt="Фото Елены Яргиной">
+							<div class="specialist-avatars__info">
+								<div class="specialist-avatars__info-top">
+									<div class="specialist-avatars__info-name">
+										Елена Яргина
+										<span class="specialist-avatars__info-position">Управляющий партнер и основатель</span>
+									</div>
+									<p class="specialist-avatars__info-experience">
+										Опыт работы <span>20+</span> лет
+									</p>
+								</div>
+								<ul class="specialist-avatars__info-list">
+									<li class="specialist-avatars__info-item">
+										5 лет — руководитель юридической службы многопрофильного
+										холдинга Group DF
+									</li>
+									<li class="specialist-avatars__info-item">
+										5 лет — глава <br>
+										аудиторско-консультационной компании
+									</li>
+									<li class="specialist-avatars__info-item">
+										обладает степенью EMBA UAMS (corporate finance)
+									</li>
+									<li class="specialist-avatars__info-item">
+										кандидат юридических наук
+									</li>
+									<li class="specialist-avatars__info-item">
+										магистр частного права
+									</li>
+								</ul>
+								<form class="specialist-form form" action="#">
+									<p class="specialist-form__title form__title">
+										Закажите звонок,
+										<span>чтобы задать свои вопросы по юридическому
+											сопровождению</span>
+									</p>
+									<span class="specialist-form__input-name form__input-name">Ваш номер</span>
+									<div class="form__input-box">
+										<input class="specialist-form__input form__input" placeholder="+7 (___) ___-__-__">
+										<button class="specialist-form__btn btn">
+											Заказать звонок
+										</button>
+									</div>
+									<label class="specialist-form__accept form__accept">
+										<input class="specialist-form__checkbox form__checkbox" name="accept" type="checkbox" checked>
+										<span class="specialist-form__checkbox-style form__checkbox-style"></span>
+										<span class="specialist-form__accept-text form__accept-text">Соглашаюсь с
+											<a class="specialist-form__accept-link social__politics" href="#">Политикой конфиденциальности
+												сайта</a>
+										</span>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="specialist-avatars__content-item" id="tab-2">
+						<div class="content-item__wrapper">
+							<img class="specialist-avatars__content-img" src="img/main-avatar-2.png" alt="Фото Ольги Рычаговой">
+							<div class="specialist-avatars__info">
+								<div class="specialist-avatars__info-top">
+									<div class="specialist-avatars__info-name">
+										Ольга Рычагова
+										<span class="specialist-avatars__info-position">Партнер</span>
+									</div>
+									<p class="specialist-avatars__info-experience">
+										Опыт работы <span>20+</span> лет
+									</p>
+								</div>
+								<ul class="specialist-avatars__info-list">
+									<li class="specialist-avatars__info-item">
+										кандидат юридических наук
+									</li>
+								</ul>
+								<form class="specialist-form form" action="#">
+									<p class="specialist-form__title form__title">
+										Закажите звонок,
+										<span>чтобы задать свои вопросы по юридическому
+											сопровождению</span>
+									</p>
+									<span class="specialist-form__input-name form__input-name">Ваш номер</span>
+									<div class="form__input-box">
+										<input class="specialist-form__input form__input" placeholder="+7 (___) ___-__-__">
+										<button class="specialist-form__btn btn">
+											Заказать звонок
+										</button>
+									</div>
+									<label class="specialist-form__accept form__accept">
+										<input class="specialist-form__checkbox form__checkbox" name="accept" type="checkbox" checked>
+										<span class="specialist-form__checkbox-style form__checkbox-style"></span>
+										<span class="specialist-form__accept-text form__accept-text">Соглашаюсь с
+											<a class="specialist-form__accept-link social__politics" href="#">Политикой конфиденциальности
+												сайта</a>
+										</span>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="specialist-avatars__content-item" id="tab-3">
+						<div class="content-item__wrapper">
+							<img class="specialist-avatars__content-img" src="img/main-avatar-3.png" alt="Фото Юлии Касаткиной">
+							<div class="specialist-avatars__info">
+								<div class="specialist-avatars__info-top">
+									<div class="specialist-avatars__info-name">
+										Юлия Касаткина
+										<span class="specialist-avatars__info-position">Партнер</span>
+									</div>
+									<p class="specialist-avatars__info-experience">
+										Опыт работы <span>20+</span> лет
+									</p>
+								</div>
+								<ul class="specialist-avatars__info-list">
+									<li class="specialist-avatars__info-item">
+										эксперт в области юридической поддержки производственных
+										компаний
+									</li>
+									<li class="specialist-avatars__info-item">
+										кандидат юридических наук Московского государственного
+										юридического университета имени О.Е. Кутафина (МГЮА)
+									</li>
+								</ul>
+								<form class="specialist-form form" action="#">
+									<p class="specialist-form__title form__title">
+										Закажите звонок,
+										<span>чтобы задать свои вопросы по юридическому
+											сопровождению</span>
+									</p>
+									<span class="specialist-form__input-name form__input-name">Ваш номер</span>
+									<div class="form__input-box">
+										<input class="specialist-form__input form__input" placeholder="+7 (___) ___-__-__">
+										<button class="specialist-form__btn btn">
+											Заказать звонок
+										</button>
+									</div>
+									<label class="specialist-form__accept form__accept">
+										<input class="specialist-form__checkbox form__checkbox" name="accept" type="checkbox" checked>
+										<span class="specialist-form__checkbox-style form__checkbox-style"></span>
+										<span class="specialist-form__accept-text form__accept-text">Соглашаюсь с
+											<a class="specialist-form__accept-link social__politics" href="#">Политикой конфиденциальности
+												сайта</a>
+										</span>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="specialist-avatars__content-item" id="tab-4">
+						<div class="content-item__wrapper">
+							<img class="specialist-avatars__content-img" src="img/main-avatar-4.png" alt="Фото Анны Покровской">
+							<div class="specialist-avatars__info">
+								<div class="specialist-avatars__info-top">
+									<div class="specialist-avatars__info-name">
+										Анна Покровская
+										<span class="specialist-avatars__info-position">Партнер</span>
+									</div>
+									<p class="specialist-avatars__info-experience">
+										Опыт работы <span>20+</span> лет
+									</p>
+								</div>
+								<ul class="specialist-avatars__info-list">
+									<li class="specialist-avatars__info-item">
+										выпускница МГЮА
+									</li>
+									<li class="specialist-avatars__info-item">
+										выпускница Российской школы частного права (магистр
+										частного права)
+									</li>
+									<li class="specialist-avatars__info-item">
+										кандидат юридических наук
+									</li>
+									<li class="specialist-avatars__info-item">
+										выпускница аспирантуры НИИ законодательства и
+										сравнительного правоведения
+									</li>
+								</ul>
+								<form class="specialist-form form" action="#">
+									<p class="specialist-form__title form__title">
+										Закажите звонок,
+										<span>чтобы задать свои вопросы по юридическому
+											сопровождению</span>
+									</p>
+									<span class="specialist-form__input-name form__input-name">Ваш номер</span>
+									<div class="form__input-box">
+										<input class="specialist-form__input form__input" placeholder="+7 (___) ___-__-__">
+										<button class="specialist-form__btn btn">
+											Заказать звонок
+										</button>
+									</div>
+									<label class="specialist-form__accept form__accept">
+										<input class="specialist-form__checkbox form__checkbox" name="accept" type="checkbox" checked>
+										<span class="specialist-form__checkbox-style form__checkbox-style"></span>
+										<span class="specialist-form__accept-text form__accept-text">Соглашаюсь с
+											<a class="specialist-form__accept-link social__politics" href="#">Политикой конфиденциальности
+												сайта</a>
+										</span>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<h2 class="about__title">Что такое Lawins. Legal за 10 лет работы</h2>
+				<div class="about-cards">
+					<div class="about-cards__item">
+						<p class="about-cards__item-text about-cards__item-text--wreath">
+							Основание — 2011 год
+						</p>
+					</div>
+					<div class="about-cards__item">
+						<p class="about-cards__item-text about-cards__item-text--twenty">
+							Опыт работы каждого члена команды 20+ лет
+						</p>
+					</div>
+					<div class="about-cards__item">
+						<p class="about-cards__item-text about-cards__item-text--mortarboard">
+							Вся команда — выпускники Российской школы частного права при
+							Президенте РФ и ведущих вузов Москвы
+						</p>
+					</div>
+					<div class="about-cards__item">
+						<p class="about-cards__item-text about-cards__item-text--tag">
+							Квалификационная группа B*
+						</p>
+						<span class="about-cards__item-info">
+							В соответствии с методологией Исследования стоимости юридической
+							помощи, проводимого Федеральной палатой адвокатов РФ и
+							экспертной группой VETA
+						</span>
+					</div>
+				</div>
+				<div class="about-content">
+					<div class="about-content__hero">
+						<img class="about-content__hero-img" src="img/about-hero.png"
+							alt="Фотография управляющего партнера Юлии Касаткиной">
+						<div class="about-content__hero-label--wrapper-outter hero-label--wrapper-outter">
+							<div class="about-content__hero-label--wrapper hero-label--wrapper">
+								<div class="about-content__hero-label--wrapper-inner hero-label--wrapper-inner">
+									<div class="about-content__hero-label hero-label">
+										Юлия Касаткина
+										<span>Управляющий партнер</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="about-content__media">
+						<div class="about-content__media-box" style="background-image: url(img/about-video-cover.jpg)">
+							<a class="about-content__play" data-fslightbox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">Смотреть
+								видео о
+								компании</a>
+						</div>
+						<div class="about__blockquote--wrapper">
+							<div class="about__blockquote">
+								<div class="about__blockquote-content--wrapper">
+									<div class="about__blockquote-content">
+										Мы осознанно сконцентрировались на узком количестве сфер
+										права, чтобы оказывать услуги наивысшего качества.
+										<span>По вашему желанию мы можем привлечь коллег и партнеров
+											для решения других ваших задач, профессиональные
+											компетенции которых и репутация нам известны не один
+											десяток лет.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="budget">
+			<div class="container">
+				<div class="budget-top section-top">
+					<h3 class="budget-top__title section-top__title">
+						Какой бюджет готовы выделять на ежемесячное юридической обслуживание?
+					</h3>
+					<p class="budget-top__subtitle section-top__subtitle">
+						Давайте встретимся, чтобы оценить стоимость и варианты решения Ваших задач
+					</p>
+				</div>
+				<div class="budget-content">
+					<div class="budget-content__side">
+						<span class="budget-content__side-title">На встрече вы:</span>
+						<ol class="budget-content__list">
+							<li class="budget-content__list-item">Определите перечень задач <span>для сопровождения вашего
+									бизнеса</span></li>
+							<li class="budget-content__list-item">Получите оценку трудоемкости <span>юридического обслуживания вашего
+									бизнеса</span></li>
+							<li class="budget-content__list-item">Получите расчет стоимости <span>ежемесячного обслуживания</span>
+							</li>
+						</ol>
+					</div>
+					<div class="budget-content__hero">
+						<img class="budget-content__hero-img" src="img/budget-hero.png"
+							alt="Фотография бухгалтера Евгении Вешкиной">
+						<div class="budget-content__hero-label--wrapper-outter hero-label--wrapper-outter">
+							<div class="budget-content__hero-label--wrapper hero-label--wrapper">
+								<div class="budget-content__hero-label--wrapper-inner hero-label--wrapper-inner">
+									<div class="budget-content__hero-label hero-label">
+										Евгения Вешкина
+										<span>Бухгалтер</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="budget-content__inner">
+						<form class="budget-content__form form" action="#">
+							<h6 class="budget-form__title form__title">
+								Введите свои данные в форму
+							</h6>
+							<div class="budget-form__input-box">
+								<span class="budget-form__input-name form__input-name">Ваше имя:</span>
+								<input class="budget-form__input form__input" placeholder="Введите Ваше имя">
+								<span class="budget-form__input-name form__input-name">Ваш телефон:</span>
+								<input class="budget-form__input form__input" placeholder="+7 (___) ___-__-__">
+							</div>
+							<div class="budget-form__filter">
+								<p class="budget-form__filter-name form__filter-name">В какую стоимость хотите вложиться при решении
+									ваших вопросов?</p>
+								<div class="budget-form__filter-box">
+									<label class="budget-form__filter-label">
+										<input class="budget-form__filter-radio form__filter-radio" name="price" type="radio">
+										<span class="budget-form__radio-style form__radio-style"></span>
+										<span class="budget-form__radio-text form__radio-text">До 30 тыс. руб.</span>
+									</label>
+									<label class="budget-form__filter-label">
+										<input class="budget-form__filter-radio form__filter-radio" name="price" type="radio">
+										<span class="budget-form__radio-style form__radio-style"></span>
+										<span class="budget-form__radio-text form__radio-text">30 - 70 тыс. руб.</span>
+									</label>
+									<label class="budget-form__filter-label">
+										<input class="budget-form__filter-radio form__filter-radio" name="price" type="radio">
+										<span class="budget-form__radio-style form__radio-style"></span>
+										<span class="budget-form__radio-text form__radio-text">70 - 150 тыс. руб.</span>
+									</label>
+									<label class="budget-form__filter-label">
+										<input class="budget-form__filter-radio form__filter-radio" name="price" type="radio" checked>
+										<span class="budget-form__radio-style form__radio-style"></span>
+										<span class="budget-form__radio-text form__radio-text">Более 150 тыс. руб.</span>
+									</label>
+								</div>
 
-	</body>
+							</div>
+							<button class="budget-form__btn btn">
+								Записаться на встречу
+							</button>
+							<label class="budget-form__accept form__accept">
+								<input class="budget-form__checkbox form__checkbox" name="accept" type="checkbox" checked>
+								<span class="budget-form__checkbox-style form__checkbox-style"></span>
+								<span class="budget-form__accept-text form__accept-text">Соглашаюсь с
+									<a class="budget-form__accept-link social__politics" href="#">Политикой конфиденциальности
+										сайта</a>
+								</span>
+							</label>
+						</form>
+						<div class="budget-content__phone">
+							Или звоните по номеру <a class="budget-content__phone-link" href="tel:+88006009161">8 800 600 91 61</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="support">
+			<div class="container">
+				<div class="support-top section-top">
+					<h3 class="support-top__title section-top__title">
+						Оказываем правовую поддержку вашего бизнеса
+					</h3>
+					<p class="support-top__subtitle section-top__subtitle">
+						по вопросам, которые вне компетенции обычного юриста
+					</p>
+				</div>
+				<div class="support-cards">
+					<div class="support-cards__item-wrapper">
+						<span class="support-cards__item">С заказчиками и <br> покупателями</span>
+					</div>
+					<div class="support-cards__item-wrapper">
+						<span class="support-cards__item">С поставщиками <br> и подрядчиками</span>
+					</div>
+					<div class="support-cards__item-wrapper">
+						<span class="support-cards__item">С акционерами <br> и участниками</span>
+					</div>
+					<div class="support-cards__item-wrapper">
+						<span class="support-cards__item">С работниками</span>
+					</div>
+					<div class="support-cards__item-wrapper">
+						<span class="support-cards__item">С государственными <br> органами</span>
+					</div>
+					<div class="support-cards__item-wrapper">
+						<span class="support-cards__item">С банками <br> и инвесторами</span>
+					</div>
+				</div>
+				<div class="support-content">
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Проверка контрагентов</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий. С другой стороны управление и развитие структуры
+							обеспечивает актуальность соответствующих условий активизации.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Правовая экспертиза и разработка договоров</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия.
+						</p>
+					</div>
+
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Правовая экспертиза и разработка внешнеэкономических
+							контрактов на английском языке</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Ведение деловой переписки и претензионной работы с
+							контрагентами</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Подготовка и учет доверенностей</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Сопровождение проверок государственных органов</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Подготовка запросов и письменных пояснений в государственные
+							органы</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Экспертиза системы ЛНА, разработка проектов ЛНА, требующихся
+							Клиенту для регламентации внутренних бизнес-процессов</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Консультации по нетиповым хозяйственным операциям</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Консультирование по вопросам, связанным с осуществлением
+							сделок приобретения/отчуждения активов</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий. С другой стороны управление и развитие структуры
+							обеспечивает актуальность соответствующих условий активизации.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Консультации по налоговым аспектам хозяйственной
+							деятельности Клиента</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий. С другой стороны управление и развитие структуры
+							обеспечивает актуальность соответствующих условий активизации.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Консультации по трудовому праву</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Сопровождение внесения изменений в учредительные документы,
+							сделок с долями и акциями Клиента</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Оформление корпоративных решений</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий. С другой стороны управление и развитие структуры
+							обеспечивает актуальность соответствующих условий активизации.
+						</p>
+					</div>
+					<div class="support-content__details">
+						<h6 class="support-content__details-title">Консультирование по вопросам создания, управления и защиты
+							объектов интеллектуальной собственности</h6>
+						<p class="support-content__details-text">Не следует, однако, забывать, что консультация с широким активом
+							обеспечивает широкому кругу специалистов форм воздействия. Разнообразный и богатый опыт
+							высокотехнологичная концепция общественной системы в значительной степени обуславливает создание
+							существующий финансовых и административных условий.
+						</p>
+					</div>
+
+				</div>
+				<span class="support-bottom__text">Не нашли своей задачи в списке?</span>
+			</div>
+		</section>
+		<div class="finance">
+			<div class="container">
+				<div class="finance-content">
+					<div class="finance-content__hero">
+						<img class="finance-content__hero-img" src="img/finance-hero.png" alt="Фотография финансиста компании Ольги Холбневой">
+						<div class="finance-content__hero-label--wrapper-outter hero-label--wrapper-outter">
+							<div class="finance-content__hero-label--wrapper hero-label--wrapper">
+								<div class="finance-content__hero-label--wrapper-inner hero-label--wrapper-inner">
+									<div class="finance-content__hero-label hero-label">
+										Ольга Холбнева
+										<span>Финансист компании</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="finance-content__text">
+						<div class="finance__blockquote--wrapper">
+							<div class="finance__blockquote">
+								<div class="finance__blockquote-content--wrapper">
+									<div class="finance__blockquote-content">
+										Мы пониманием Ваши бизнес-показатели и <strong>можем предложить оптимальные условия
+											сотрудничества</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="finance-content__list">
+							<li class="finance-content__list-item">
+								Мы осознанно ограничили наши компетенции направлением B2B, <strong>обеспечивая оперативность и
+									компетентность</strong> при удовлетворении потребностей бизнеса в правовом сопровождении;
+							</li>
+							<li class="finance-content__list-item">
+								<strong>Мы умеем считать деньги наших клиентов</strong>, поэтому наши рекомендации всегда исходят из
+								принципа экономической целесообразности для них;
+							</li>
+							<li class="finance-content__list-item">
+								Мы гибки в определении «глубины погружения» в деятельность наших клиентов – <strong>Вы сами определяете
+									круг задач и периодичность обращения к нам.</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <section class="key">
+			<div class="container">
+				<h3 class="key-top__title section-top__title">
+					«Под ключ» решаем все вопросы, связанные с юридическим сопровождением вашей компании
+				</h3>
+			</div>
+			<div class="key-content">
+
+			</div>
+		</section> -->
+		<section class="other">
+			<div class="container">
+				<div class="other-top section-top">
+					<h3 class="other-top__title section-top__title">
+						У вас другая задача?
+					</h3>
+					<p class="other-top__subtitle section-top__subtitle">
+						у нас вы можете получить не только комплексное юридическое обслуживание вашей компании, но и обратиться со
+						сложной разовой задачей
+					</p>
+				</div>
+				<div class="other-content">
+					<div class="other-content__item">
+						<a class="other-content__item-imglink" href="#">
+							<img class="other-content__item-img" src="img/other-cover-1.jpg" alt="Обложка статьи">
+						</a>
+						<div class="other-content__item-box">
+							<h6 class="other-content__item-title">Правовые экспертизы</h6>
+							<a class="other-content__item-link" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="other-content__item">
+						<a class="other-content__item-imglink" href="#">
+							<img class="other-content__item-img" src="img/other-cover-2.jpg" alt="Обложка статьи">
+						</a>
+						<div class="other-content__item-box">
+							<h6 class="other-content__item-title">Правовые экспертизы</h6>
+							<a class="other-content__item-link" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="other-content__item">
+						<a class="other-content__item-imglink" href="#">
+							<img class="other-content__item-img" src="img/other-cover-3.jpg" alt="Обложка статьи">
+						</a>
+						<div class="other-content__item-box">
+							<h6 class="other-content__item-title">Правовые экспертизы</h6>
+							<a class="other-content__item-link" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<a class="footer__logo-link logo-link" href="#">
+					<img class="footer__logo-img logo-img" src="img/svg/logo-white.svg" alt="Логотип компании">
+				</a>
+				<span class="footer__descr descr">
+					Юридическое обслуживание бизнеса по всей России
+				</span>
+				<nav class="footer__menu menu">
+					<ul class="footer__menu-list menu-list">
+						<li class="footer__menu-item menu-item">
+							<a class="footer__menu-link menu-link" href="#">Направления работы</a>
+						</li>
+						<li class="footer__menu-item menu-item">
+							<a class="footer__menu-link menu-link" href="#">Расчет цены</a>
+						</li>
+						<li class="footer__menu-item menu-item">
+							<a class="footer__menu-link menu-link" href="#">FAQ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="developer">
+					<span class="developer__text">Разработка сайта:</span>
+					<a class="developer__link" href="#">
+						<img class="developer__logo" src="img/svg/dev-logo.svg" alt="Логотип разработчика сайта">
+					</a>
+				</div>
+				<div class="social">
+					<div class="social__links">
+						<span class="social__links-text">Lawins.Legal в соц-сетях</span>
+						<a class="social__links-item" href="#">
+							<img class="social__links-img" src="img/svg/instagram-icon.svg" alt="Наш профиль в Instagram">
+						</a>
+						<a class="social__links-item" href="#">
+							<img class="social__links-img" src="img/svg/fb-icon.svg" alt="Наш профиль в Facebook">
+						</a>
+					</div>
+					<a class="social__politics-link social__politics" href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/main.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,227 @@
+.specialist {
+  padding-top: 80px;
+
+  background-image: url("../img/specialist-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.specialist-top {
+  &__subtitle {
+    margin-bottom: 60px;
+  }
+}
+
+.content-item__wrapper {
+  display: flex;
+}
+
+.specialist-avatars {
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  &__top-item {
+    &:hover,
+    &--active {
+      .specialist-avatars__wrapper {
+        object-fit: cover;
+
+        &:after {
+          background: #ffd408;
+
+          transition: all .3s;
+        }
+      }
+
+      .specialist-avatars__img {
+        filter: none;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    width: 102px;
+    height: 130px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    overflow: hidden;
+
+    border-radius: 0 0 51px 51px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+
+      width: 100%;
+      height: 102px;
+
+      background: linear-gradient(0deg, #3a3e50, #3a3e50), #3a3e50;
+      border-radius: 50%;
+
+      transition: all .3s;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    max-width: 100%;
+
+    filter: grayscale(1);
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+    color: var(--default-color);
+  }
+
+  &__content-item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__info-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-name {
+    margin-right: 110px;
+    margin-bottom: 50px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    font-family: "Trajan Pro 3";
+    color: var(--default-color);
+  }
+
+  &__info-position {
+    position: relative;
+
+    display: block;
+    padding-left: 72px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    font-family: "Gilroy", sans-serif;
+    color: rgba(255, 255, 255, .4);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 56px;
+      height: 1px;
+
+      background-color: #ffd408;
+      box-shadow: 0 1px 18px rgba(255, 212, 8, .2);
+    }
+  }
+
+  &__info-experience {
+    font-weight: 600;
+    line-height: 40px;
+    color: rgba(255, 255, 255, .6);
+
+    span {
+      padding-left: 3px;
+
+      font-size: 18px;
+      font-family: "Trajan Pro 3";
+      color: #ffd408;
+    }
+  }
+
+  &__info-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 640px;
+    max-height: 320px;
+    margin-bottom: 50px;
+
+    column-count: 2;
+    column-gap: 90px;
+  }
+
+  &__info-item {
+    position: relative;
+
+    max-width: 255px;
+    padding-left: 34px;
+
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, .8);
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+
+      width: 13px;
+      height: 13px;
+
+      background-image: url("../img/yellow-point.png");
+      filter: drop-shadow(0 4px 14px rgba(255, 212, 8, .8));
+    }
+  }
+}
+
+.specialist-form {
+  width: 638px;
+  padding: 45px 55px;
+
+  background: #1f222f;
+  border: 1px solid #ffd408;
+  border-radius: 6px;
+  box-shadow: 0 4px 55px rgba(18, 20, 29, .6);
+
+  &__title {
+    font-size: 23px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  &__input {
+    margin-right: 30px;
+
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 6px;
+    outline: rgba(255, 255, 255, .6);
+  }
+
+  &__btn {
+    padding: 23px 47px;
+  }
+}

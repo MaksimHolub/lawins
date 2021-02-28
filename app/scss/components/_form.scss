@@ -1,0 +1,97 @@
+.form {
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__input-name {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    color: rgba(255, 255, 255, .6);
+  }
+
+  &__input {
+    max-width: 238px;
+    padding: 20px 30px 20px 35px;
+
+    font-size: 16px;
+    line-height: 26px;
+
+    &::placeholder {
+      margin-left: 15px;
+
+      text-align: right;
+
+      background-image: url("../img/svg/phone-small.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__checkbox {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    clip: rect(0 0 0 0);
+  }
+
+  &__checkbox-style {
+    position: relative;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+
+    border: 1px solid rgba(#ffd408, .6);
+    border-radius: 2px;
+  }
+
+  &__checkbox:checked + .form__checkbox-style::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1px;
+
+    width: 10px;
+    height: 10px;
+
+    background-image: url("../img/svg/check.svg");
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+
+  &__accept {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(#313131, .4);
+  }
+
+  &__accept-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, .4);
+  }
+}
