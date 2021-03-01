@@ -1,0 +1,111 @@
+.benefits {
+  padding-top: 80px;
+  padding-bottom: 85px;
+
+  background-position: center center;
+  background-size: cover;
+}
+
+.benefits-top {
+  margin-bottom: 55px;
+  padding: 0 100px;
+
+  text-align: center;
+
+  &__subtitle {
+    position: relative;
+
+    display: inline-block;
+    max-width: 495px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 0;
+
+      width: 36px;
+      height: 3px;
+
+      background-image: url("../img/svg/line-36.svg");
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 55px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+  }
+}
+
+.benefits-content {
+  &__title {
+    margin-bottom: 70px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+    letter-spacing: .03em;
+  }
+
+  &__wrapper {
+    display: grid;
+
+    text-align: center;
+    column-gap: 95px;
+
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 70px;
+  }
+
+  &__item-title {
+    position: relative;
+
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-top: 95px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 54px;
+      height: 54px;
+
+      background-image: url("../img/svg/alarm-clock.svg");
+      transform: translateX(-50%);
+    }
+  }
+
+  &__item-descr {
+    display: inline-block;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+
+    opacity: .6;
+  }
+}
