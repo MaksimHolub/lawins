@@ -1,0 +1,88 @@
+.efficiency-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__inner {
+    max-width: 700px;
+    margin-bottom: 50px;
+    padding-top: 60px;
+  }
+
+  &__inner-title {
+    margin-bottom: 30px;
+  }
+
+  &__inner-title,
+  &__inner-subtitle {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: "Trajan Pro 3";
+    color: #313131;
+  }
+
+  &__inner-subtitle {
+    display: inline-block;
+    margin-bottom: 65px;
+
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: .03em;
+
+    opacity: .6;
+  }
+
+  &__inner-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 45px 55px 25px 55px;
+
+    background: rgba(217, 217, 217, .1);
+    border-radius: 6px;
+  }
+
+  &__inner-item {
+    position: relative;
+
+    display: block;
+    padding-top: 95px;
+
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(49, 49, 49, .8);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/svg/result-icon.svg");
+    }
+
+    &:not(:last-child) {
+      padding-right: 75px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+
+        width: 1px;
+        height: 136px;
+
+        background-color: rgba(0, 0, 0, .06);
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 130px;
+  }
+}

@@ -1,0 +1,129 @@
+.problem {
+  position: relative;
+
+  padding-top: 95px;
+  padding-bottom: 100px;
+
+  background-image: url("../img/problem-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.problem-top {
+  max-width: 705px;
+  margin: 0 auto 65px;
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 55px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+    color: #313131;
+  }
+
+  &__subtitle {
+    position: relative;
+
+    display: block;
+    padding-right: 55px;
+    padding-left: 45px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(48, 48, 48, .6);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 140px;
+
+      width: 36px;
+      height: 4px;
+
+      background-image: url("../img/svg/line-36.svg");
+    }
+  }
+}
+
+.problem-slider {
+  padding: 15px;
+
+  background-color: #fff;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: transparent;
+    border: 2px dashed rgba(49, 49, 49, .05);
+    border-radius: 6px;
+  }
+
+  &__item-img {
+    margin-left: -420px;
+  }
+
+  &__item-content {
+    margin-left: -150px;
+    padding: 50px 60px 90px 0;
+  }
+
+  &__item-title {
+    margin-bottom: 35px;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 36px;
+    font-family: "Trajan Pro 3";
+    color: #313131;
+  }
+
+  &__item-subtitle {
+    margin-bottom: 12px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Trajan Pro 3";
+    color: rgba(48, 48, 48, .8);
+  }
+
+  &__item-text {
+    margin-bottom: 35px;
+
+    line-height: 23px;
+    color: rgba(48, 48, 48, .7);
+  }
+
+  &__item-box {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__item-photo {
+    margin-right: 35px;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+
+    display: block;
+    margin: 0 auto;
+    padding: 30px 90px;
+
+    transform: translateX(-50%);
+
+    &:hover {
+      box-shadow: 0 16px 68px 2px rgba(255, 212, 8, .54);
+    }
+  }
+}
