@@ -38,6 +38,7 @@ function styles() {
 function scripts() {
 	return src([
 		"node_modules/jquery/dist/jquery.js",
+		"app/js/libs/jquery.formstyler.js",
 		"node_modules/fslightbox/index.js",
 		"app/js/main.js",
 	])

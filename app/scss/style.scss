@@ -1,5 +1,7 @@
 @import "vars";
 
+@import "libs/libs";
+
 @import "fonts";
 
 @import "reset";
@@ -15,48 +17,56 @@
 
 /* ------------------------------- Start Header ------------------------------- */
 
-@import "header";
+@import "./blocks/header";
 
 /* ------------------------------- Start Footer ------------------------------- */
 
-@import "footer";
+@import "./blocks/footer";
 
 /* ------------------------------- Start Consequences ------------------------------- */
 
-@import "consequences";
+@import "./blocks/consequences";
 
 /* ------------------------------- Start Specialist ------------------------------- */
 
-@import "specialist";
+@import "./blocks/specialist";
 
 /* ------------------------------- Start About ------------------------------- */
 
-@import "about";
+@import "./blocks/about";
 
 /* ------------------------------- Start Budget ------------------------------- */
 
-@import "budget";
+@import "./blocks/budget";
 
 /* ------------------------------- Start Support ------------------------------- */
 
-@import "support";
+@import "./blocks/support";
 
 /* ------------------------------- Start Other ------------------------------- */
 
-@import "other";
+@import "./blocks/other";
 
 /* ------------------------------- Start Finance ------------------------------- */
 
-@import "finance";
+@import "./blocks/finance";
 
 /* ------------------------------- Start Benefits ------------------------------- */
 
-@import "benefits";
+@import "./blocks/benefits";
 
 /* ------------------------------- Start Problem ------------------------------- */
 
-@import "problem";
+@import "./blocks/problem";
 
 /* ------------------------------- Start Efficiency ------------------------------- */
 
-@import "efficiency";
+@import "./blocks/efficiency";
+
+/* ------------------------------- Start Calc ------------------------------- */
+
+@import "./blocks/calc";
+
+/* ------------------------------- Start Individual ------------------------------- */
+
+@import "./blocks/individual";

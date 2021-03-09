@@ -1,3 +1,7 @@
+.efficiency {
+  position: relative;
+}
+
 .efficiency-content {
   display: flex;
   justify-content: space-between;
@@ -84,5 +88,6 @@
   &__img {
     position: absolute;
     right: 130px;
+    bottom: 0;
   }
 }
