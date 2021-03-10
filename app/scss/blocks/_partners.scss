@@ -1,0 +1,117 @@
+.partners {
+  padding-top: 85px;
+  padding-bottom: 70px;
+}
+
+.partners-top {
+  margin-bottom: 65px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 55px;
+    font-family: "Trajan Pro 3";
+    text-align: center;
+    color: #313131;
+  }
+}
+
+.partners-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.partners-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+
+  &__item-wrapper {
+    max-width: 48%;
+    padding: 14px;
+
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, .04);
+  }
+
+  &__item {
+    height: 100%;
+    padding: 40px 25px 45px 30px;
+
+    border: 2px dashed rgba(49, 49, 49, .05);
+    border-radius: 6px;
+  }
+
+  &__item-title {
+    margin-bottom: 35px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    font-family: "Trajan Pro 3";
+    color: #313131;
+  }
+
+  &__item-logo {
+    margin-bottom: 30px;
+  }
+
+  &__item-text {
+    margin-bottom: 25px;
+
+    line-height: 25px;
+    color: rgba(48, 48, 48, .6);
+  }
+
+  &__item-subtitle {
+    display: block;
+    margin-bottom: 10px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Trajan Pro 3";
+    color: rgba(48, 48, 48, .8);
+  }
+
+  &__item-link {
+    position: relative;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(48, 48, 48, .6);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+
+      width: 76px;
+      height: 2px;
+
+      background-color: rgba(48, 48, 48, .08);
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 210px;
+    height: 65px;
+    margin: 0 auto;
+
+    font-weight: 600;
+    line-height: 25px;
+    color: #313131;
+    letter-spacing: .03em;
+
+    background-color: transparent;
+    border: 1px solid #ffd408;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}

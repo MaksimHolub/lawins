@@ -1180,9 +1180,9 @@
 					<div class="problem-slider">
 						<div class="problem-slider__item">
 							<img
+								class="problem-slider__item-img"
 								src="img/document.png"
 								alt="Декоративное изображение контракта"
-								class="problem-slider__item-img"
 							/>
 							<div class="problem-slider__item-content">
 								<h5 class="problem-slider__item-title">
@@ -1208,19 +1208,19 @@
 								>
 								<div class="problem-slider__item-box">
 									<img
+										class="problem-slider__item-photo"
 										src="img/problem-photo-1.png"
-										alt=""
-										class="problem-slider__item-photo"
+										alt
 									/>
 									<img
+										class="problem-slider__item-photo"
 										src="img/problem-photo-2.png"
-										alt=""
-										class="problem-slider__item-photo"
+										alt
 									/>
 									<img
-										src="img/problem-photo-3.png"
-										alt=""
 										class="problem-slider__item-photo"
+										src="img/problem-photo-3.png"
+										alt
 									/>
 								</div>
 							</div>
@@ -1453,24 +1453,13 @@
 							<button class="calc-content__result-btn btn">
 								Получить точный расчет
 							</button>
-							<a href="#" class="calc-content__result-link">
+							<a class="calc-content__result-link" href="#">
 								Дорого? Получите индивидуальное предложение под ваш бюджет
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- <section class="tariff">
-			<div class="container">
-				<div class="tariff-top">
-					<h3 class="tariff-top__title">Подберите оптимальный тариф для своего бизнеса в зависимости от вашего бюджета</h3>
-					<span class="tariff-top__subtitle">Выберите объем услуг, который вам примерно требуется в течение месяца</span>
-				</div>
-				<div class="tariff-content">
-
-				</div>
-			</div>
-		</section> -->
 			<section class="individual">
 				<div class="container">
 					<div class="individual-top">
@@ -1496,11 +1485,29 @@
 						</div>
 						<div class="individual-content__hero">
 							<img
+								class="individual-content__hero-img"
 								src="img/individual-hero.png"
 								alt="Фотография основателя компании Елены Яргиной"
-								class="individual-content__hero-img"
 							/>
-							<div class="individual-content__hero-label"></div>
+							<div
+								class="individual-content__hero-label--wrapper-outter hero-label--wrapper-outter"
+							>
+								<div
+									class="individual-content__hero-label--wrapper hero-label--wrapper"
+								>
+									<div
+										class="individual-content__hero-label--wrapper-inner hero-label--wrapper-inner"
+									>
+										<div class="individual-content__hero-label hero-label">
+											Елена Яргина
+											<span
+												>Основатель компании <br />
+												Lawins Legal</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="individual-content__blockquote">
 							<p class="individual-content__blockquote-text">
@@ -1515,16 +1522,219 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section class="key">
-			<div class="container">
-				<h3 class="key-top__title section-top__title">
-					«Под ключ» решаем все вопросы, связанные с юридическим сопровождением вашей компании
-				</h3>
-			</div>
-			<div class="key-content">
-
-			</div>
-		</section> -->
+			<section class="partners">
+				<div class="container">
+					<div class="partners-top">
+						<h3 class="partners-top__title">
+							Компании-лидеры своих отраслей доверили юридическое обслуживание
+							Lawins.Legal
+						</h3>
+					</div>
+					<div class="partners-slider">
+						<img
+							class="partners-slider__img"
+							src="img/gas.png"
+							alt="Логотип Газпром-Медиа"
+						/>
+						<img
+							class="partners-slider__img"
+							src="img/rosteh.png"
+							alt="Логотип Ростех"
+						/>
+						<img
+							class="partners-slider__img"
+							src="img/rosnano.png"
+							alt="Логотип Роснано"
+						/>
+						<img
+							class="partners-slider__img"
+							src="img/comedy.png"
+							alt="Логотип Comedy Club Production"
+						/>
+						<img
+							class="partners-slider__img"
+							src="img/ntvplus.png"
+							alt="Логотип НТВ-Плюс"
+						/>
+					</div>
+					<div class="partners-content">
+						<div class="partners-content__item-wrapper">
+							<div class="partners-content__item">
+								<h6 class="partners-content__item-title">
+									Комплексное юридическое сопровождение бизнеса группы компаний
+									И.Я. Крутого «АРС Рекордз»
+								</h6>
+								<img
+									class="partners-content__item-logo"
+									src="img/ars.png"
+									alt="Логотип АРС Рекордс"
+								/>
+								<p class="partners-content__item-text">
+									<span class="partners-content__item-subtitle">Задача:</span>
+									Обеспечить консультирование по текущим вопросам деятельности,
+									полное договорное сопровождение, включая ведение договорного
+									делопроизводства.
+								</p>
+								<p class="partners-content__item-text">
+									<span class="partners-content__item-subtitle"
+										>Результат:</span
+									>
+									Обеспечено полное договорное сопровождение деятельности,
+									включая ведение делопроизводства, полное юридическое
+									обеспечение таких мероприятий, как «Новая Волна-2011/2012»...
+								</p>
+								<a class="partners-content__item-link" href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="partners-content__item-wrapper">
+							<div class="partners-content__item">
+								<h6 class="partners-content__item-title">
+									Корпоративно-правовое управление ЗАО «Краснодарстройтрансгаз»
+								</h6>
+								<img
+									class="partners-content__item-logo"
+									src="img/kstg.png"
+									alt="Логотип ЗАО «Краснодарстройтрансгаз»"
+								/>
+								<p class="partners-content__item-text">
+									<span class="partners-content__item-subtitle">Задача:</span>
+									Осуществление деятельности корпоративно-правового управления
+									со следующей функциональной компетенцией: корпоративное
+									право,договорная и претензионно-исковая работа, разработка
+									внутренней нормативно – распорядительной документации перед
+									прохождением сертификации ISO, лицензирование и взаимодействие
+									с СРО в области строительства.
+								</p>
+								<a class="partners-content__item-link" href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<button class="partners-content__btn">Показать ещё</button>
+				</div>
+			</section>
+			<section class="key">
+				<div class="container">
+					<div class="key-top">
+						<h3 class="key-top__title">
+							Свяжитесь с нами и получите предложение по разработке методологии
+							выстраивания юридической службы под ключ
+						</h3>
+					</div>
+					<div class="key-content">
+						<span class="key-content__title"
+							>Во время экспресс-анализа вы:</span
+						>
+						<ol class="key-content__list">
+							<li class="key-content__list-item">
+								<strong>Получите пошаговый план работ </strong>по оптимизации
+								работы Вашей юридической службы
+							</li>
+							<li class="key-content__list-item">
+								Получите <strong>календарный план и стоимость </strong>вашего
+								сопровождения
+							</li>
+							<li class="key-content__list-item">
+								<strong>Сможете оценить наш подход </strong>к работе и
+								познакомитесь с одним из партнеров
+							</li>
+						</ol>
+						<div class="key-content__inner">
+							<div class="key-content__hero">
+								<img
+									src="img/key-hero.png"
+									alt="Фотография юриста компании Юлии Касаткиной"
+									class="key-content__hero-img"
+								/>
+								<div
+									class="key-content__hero-label--wrapper-outter hero-label--wrapper-outter"
+								>
+									<div
+										class="key-content__hero-label--wrapper hero-label--wrapper"
+									>
+										<div
+											class="key-content__hero-label--wrapper-inner hero-label--wrapper-inner"
+										>
+											<div class="key-content__hero-label hero-label">
+												Юлия Касаткина
+												<span>Юрист</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<form class="key-content__form form" action="#">
+								<h6 class="key-form__title form__title">
+									Как вам удобнее связаться?
+								</h6>
+								<div class="key-form__input-box">
+									<div class="key-form__filter">
+										<div class="key-form__filter-box">
+											<label class="key-form__filter-label">
+												<input
+													class="key-form__filter-radio form__filter-radio"
+													name="price"
+													type="radio"
+													checked
+												/>
+												<span class="key-form__radio-text form__radio-text"
+													>Viber</span
+												>
+											</label>
+											<label class="key-form__filter-label">
+												<input
+													class="key-form__filter-radio form__filter-radio"
+													name="price"
+													type="radio"
+												/>
+												<span class="key-form__radio-text form__radio-text"
+													>WhatsApp</span
+												>
+											</label>
+											<label class="key-form__filter-label">
+												<input
+													class="key-form__filter-radio form__filter-radio"
+													name="price"
+													type="radio"
+												/>
+												<span class="key-form__radio-text form__radio-text"
+													>Telegram</span
+												>
+											</label>
+										</div>
+									</div>
+									<span class="key-form__input-name form__input-name"
+										>Ваш номер</span
+									>
+									<input
+										class="key-form__input form__input"
+										placeholder="+7 (___) ___-__-__"
+									/>
+								</div>
+								<button class="key-form__btn btn">
+									Получить экспресс-анализ ситуации
+								</button>
+								<label class="key-form__accept form__accept">
+									<input
+										class="key-form__checkbox form__checkbox"
+										name="accept"
+										type="checkbox"
+										checked
+									/>
+									<span
+										class="key-form__checkbox-style form__checkbox-style"
+									></span>
+									<span class="key-form__accept-text form__accept-text"
+										>Соглашаюсь с
+										<a class="key-form__accept-link social__politics" href="#"
+											>Политикой конфиденциальности сайта</a
+										>
+									</span>
+								</label>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="other">
 				<div class="container">
 					<div class="other-top section-top">
