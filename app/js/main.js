@@ -19,4 +19,12 @@ $(function () {
 	});
 
 	$(".calc-content__list-input").styler();
+
+	$(".faq-question__list-item").on("click", function (e) {
+		e.preventDefault();
+		$(".faq-question__list-item").removeClass(
+			"faq-question__list-item--active"
+		);
+		$(this).addClass("faq-question__list-item--active");
+	});
 });

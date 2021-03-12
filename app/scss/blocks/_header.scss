@@ -1,7 +1,10 @@
 .header {
+  z-index: -1;
+
   min-height: 948px;
 
-  background-image: url("../img/header-bg.png");
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
@@ -196,6 +199,15 @@
       background-image: url("../img/svg/hummer.svg");
     }
   }
+}
+
+.header-hero__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  // max-width: none;
 }
 
 .header-content {
